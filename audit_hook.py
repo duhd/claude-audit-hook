@@ -207,7 +207,9 @@ def handle_pre_tool_use(payload):
 
 
 def handle_post_tool_use(payload):
-    tool_result = payload.get("tool_result")
+    tool_result = payload.get("tool_response")
+    if tool_result is None:
+        tool_result = payload.get("tool_result")
     if isinstance(tool_result, dict):
         text = json.dumps(tool_result, ensure_ascii=False)
         was_dict = True
