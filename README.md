@@ -137,4 +137,4 @@ Xem docs Claude Code hooks: https://docs.claude.com/en/docs/claude-code/hooks
 
 ## License
 
-Nội bộ VNPAY / Agentic Framework. Không phân phối public.
+MIT
